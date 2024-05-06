@@ -1,0 +1,141 @@
+body {
+    display:flexbox;
+    grid-template-columns:2px;
+    font-family: "Outfit", sans-serif;
+    font-size: 2em;
+    background-color: #DFD0B8;
+    min-height: 100vh;
+    flex-direction: column;
+       }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+header {
+  background-color:#3C5B6F;
+  color:#DFD0B8;
+  width:100%;
+  padding:30px;
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+  text-align: center;
+}   
+footer{
+  position:relative;
+  bottom:0;
+  width: 100%;
+  padding: 0 20px;
+} 
+nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+        padding-left: 20px;
+        padding-right: 80px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+nav ul li a{
+  text-decoration: none;
+  color:#DFD0B8;
+  font-size: 20px;
+  padding: 0 40px;
+  font-family: "Outfit", sans-serif;
+  margin-bottom: auto;
+}
+nav ul li a:hover{
+  color: #153448;
+}
+nav div span a:link{
+  text-decoration: none;
+}
+nav div span a:visited{
+  color: #DFD0B8;
+}
+.search{
+  padding: 15px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:max-content;
+  border-radius: 28px;
+  background-color:#153448;
+  width: 400px;
+}
+.search-input{
+  font-size: 16px;
+  color: #fdfcfc;
+  margin-left:20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex: 1;
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+}
+.container{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:20px 50px 60px;
+    width: 90%;
+       }
+.container p{
+  font-size: small;
+}
+#pro{
+  display: flex;
+  margin-top: 10px;
+}
+#pro .big{
+  width: 50%;
+  margin-right: 50px;
+}
+#pro .small .a{
+  margin: 7px;
+}
+.small{
+  display: flex;
+  justify-content: space-between;
+}
+.big{
+  max-width:max-content;
+  border-radius: 10px;
+  overflow:hidden;
+  margin: 20px;
+}
+.info{
+      margin: 50px;
+      width: 100%;
+    }
+#pro .info{
+  width:50%;
+  padding-top: 20px;
+}
+#pro .info select{
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+#pro .info input{
+  margin-right: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  height: 47px;
+  width: 50px;
+}
+#pro .info button{
+  background-color: rgb(55, 120, 55);
+  color: white;
+  font-size: 25px;
+  height: 47px;
+  width: 200px;
+}
+#pro .info button:hover{
+  background-color: rgb(56, 93, 56);
+  color: white;
+}
+
