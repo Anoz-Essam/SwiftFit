@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: #DFD0B8;
+}
+
+.navbar {
+  background-color: #3C5B6F;
+  padding: 20px 50px;
+}
+
+.logo-search-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  width: 80px;
+  height: 80px;
+}
+
+.navbar .searchbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #153448;
+}
+
+.navbar .searchbar input {
+  outline: none;
+  border: none;
+  background-color: #153448;
+}
+
+.navbar .searchbar input::placeholder {
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+
+.navbar ul .moon {
+  width: 32px;
+  height: 32px;
+}
+
+.navbar ul {
+  background-color: #3C5B6F;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #DFD0B8;
+  text-decoration: none;
+  display: block;
+  padding: 14px 50px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #948979;
+
+}
+
+.navbar li {
+  float: left;
+}
+
+footer {
+  display: flex;
+
+}
+
+footer .left {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+footer .left .part {
+  margin-right: 120%;
+}
+
+footer .footertitle {
+  font-size: 16px;
+  color: #153448;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+footer a {
+  color: #3C5B6F;
+  text-decoration: none;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer a:hover {
+  color: #2E8B57;
+}
+
+footer .right {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+footer .right .part {
+  margin-left: 210%;
+}
+
+footer .icons {
+  color: black;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+footer .footericons {
+  display: flex;
+}
+
+main .maintop {
+  display: flex;
+  margin-top: 80px;
+}
+
+main .maintop .col2 {
+  padding: 30px;
+}
+
+main .maintop .col2 img {
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+main .maintop .col2 p {
+  color: gray;
+  font-size: 10px;
+}
+
+main .maintop .col2 h4 {
+  color: #3C5B6F;
+  font-size: 22px;
+}
+
+main .maintop .col2 select {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  background-color: white;
+  border: solid;
+  border-color: #3C5B6F;
+}
+
+main .maintop .col2 option {
+  font-family: "Outfit", sans-serif;
+}
+
+main .maintop .col2 .quantity {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  background-color: white;
+  border: solid;
+  border-color: #3C5B6F;
+}
+
+main .maintop .col2 button {
+  display: flex;
+  justify-content: center;
+  padding: 20px 130px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  background-color: #3C5B6F;
+}
+
+main .maintop .col2 button:hover {
+  background-color: #153448;
+}
+
+main .maintop .col2 a {
+  color: #DFD0B8;
+  text-decoration: none;
+}
+
+main .maintop hr {
+  color: gray;
+}
+
+main .maintop .col2 ul {
+  padding-left: 17px;
+}
+
+main .maintop .col2 li {
+  padding-bottom: 15px;
+  ;
+}
+
+main .maintop .col2 .small-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .maintop .col2 .small-img-col {
+  flex-basis: 16%;
+  cursor: pointer;
+  width: 20px;
+}
+
+main .smallmgIn {
+  width: 90px;
+}
+
+
+main .img-colors {
+  width: 90px;
+  cursor: pointer;
+}
+
+main span {
+  width: 570px;
+  height: 700px;
+  margin-right: 70px;
+}

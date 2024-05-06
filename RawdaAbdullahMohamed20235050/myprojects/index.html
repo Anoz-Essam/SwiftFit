@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="csss/style2.css">
+  <title>SwiftFit</title>
+  <script src="https://kit.fontawesome.com/bdd567d94d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-search-cart">
+      <img src="logo.png" alt="" class="logo">
+      <div class="searchbar">
+        <input type="text" placeholder="Search..">
+        <img src="search.png" width="20" height="20" alt="" class="searchIcon">
+      </div>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </div>
+    <ul>
+      <li><a href="/SwiftFit/index.html">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="/SwiftFit/HodaNasser/about.html">About</a></li>
+      <li><a href="/SwiftFit/RawanM/practical exam/practical.html">Login</a></li>
+      <li><a href="/SwiftFit/RawanE/contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="maintop">
+      <div class="col2">
+        <img src="blacktshirt1-removebg-preview.png" alt="" id="bigimg">
+        <div class="small-img">
+          <div class="small-img-col">
+            <img src="blacktshirt1-removebg-preview.png" class="smallmgIn">
+          </div>
+          <div class="small-img-col">
+            <img src="blacktshirt2-removebg-preview.png" class="smallmgIn">
+          </div>
+        </div>
+      </div>
+      <div class="col2">
+        <p>Home / Woman / T-shirt</p>
+        <h1>Women's short-sleeved running t-shirt - black</h1>
+        <h4>350 EGP</h4>
+        <div class="colors">
+          <h3>Colors:</h3>
+          <a href="index.html"> <img src="blacktshirt1-removebg-preview.png" class="img-colors"></a>
+          <a href="co2_index.html"><img src="whitetshirt-removebg-preview.png" class="img-colors"></a>
+        </div>
+        <select>
+          <option>Select Size</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+        <input type="Quantity" value="1" class="quantity">
+        <button><a href="#cart">Add To Cart</a></button>
+        <hr>
+        <h3>Description</h3>
+        <ul>
+          <li>Breathable </li>
+          <li>Fast Dry</li>
+          <li>Silicon Tape</li>
+          <li>Ultra-Light</li>
+        </ul>
+        <hr>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="left">
+      <div class="part">
+        <h1 class="footertitle">About Us</h1>
+        <ul>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Contant </a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="part">
+        <h1 class="footertitle">Useful Links</h1>
+        <ul>
+          <li><a href="#">Refund</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="part">
+        <h1 class="footertitle">Products</h1>
+        <ul>
+          <li><a href="#">Wear</a></li>
+          <li><a href="#">Gear</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <div class="part">
+        <h1 class="footertitle">Follow Us</h1>
+        <ul class="footericons">
+          <li><a href="#" class="icons"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#" class="icons"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#" class="icons"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#" class="icons"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+        <ul class="copyrights">
+          <li>SwiftFit. All rights reserved. 2024.</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var bigimg = document.getElementById("bigimg");
+    var smallmgIn = document.getElementsByClassName("smallmgIn");
+    var imgcolors = document.getElementsByClassName("img-colors");
+    smallmgIn[0].onclick = function () {
+      bigimg.src = smallmgIn[0].src;
+    }
+    smallmgIn[1].onclick = function () {
+      bigimg.src = smallmgIn[1].src;
+    }
+    smallmgIn[2].onclick = function () {
+      bigimg.src = smallmgIn[2].src;
+    }
+  </script>
+</body>
+
+</html>
