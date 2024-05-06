@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+a {
+    text-decoration: none;
+    color: #153448;
+    font-family: "Outfit", sans-serif;
+}
+.home{
+   display: flex;
+   justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#153448 ;
+}
+.container form{
+    width: 700px;
+    padding: 40px;
+    background-color:#DFD0B8 ;
+    padding: 60px;
+}
+form .row{
+    display: flex;
+    gap: 20%;
+}
+.colomn .title{
+    font-size: 35px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.colomn .input-box{
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    padding: 10px 15px;
+    border:  1px solid #153448 ;
+    border-radius: 2px;
+    font-size: 15px;
+}
+.input-box span{
+    display:block;
+    margin-bottom: 10px;
+}
+
+.row.colomn{
+flex: 1 1 300px;
+}
+.colomn.flex{
+    display: flex;
+    gap: 90px;
+}
+.flex.input-box{
+    margin-top: 5px;
+}
+form .btn{
+width: 100%;
+padding: 15px;
+background-color:#948979 ;
+border: none;
+outline: none;
+border-radius: 6px;
+color: #000;
+margin-top: 5px;
+cursor: pointer;
+transition: .5s;
+}
+form .btn:hover{
+    background-color: #153448;
+}

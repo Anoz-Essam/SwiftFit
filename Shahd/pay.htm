@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type ="text/css" href = "style pay.css"/>
+   
+</head>
+<body>
+<div class="container">
+    <form action="">
+        <div class="row">
+            <div class="colomn">
+                <h3 class="title">Billing address</h3>
+                <div class="input-box">
+                    <span>Full Name: </span>
+                    <input type="text" placeholder="your name...">
+                </div>
+                <div class="input-box"><span>Email :</span>
+                    <input type="email" placeholder="@gmail.com...">
+                </div>
+                <div class="input-box">
+                    <span>Address :</span>
+                    <input type="text" placeholder="street --floor --department --">
+                </div>
+                <div class="input-box">
+                    <span>City :</span>
+                    <input type="text" placeholder="Egypt">
+                </div><div class="flex">
+                <div class="input-box">
+                    <span>State :</span>
+                    <input type="text" placeholder="Cairo">
+                </div>
+                <div class="input-box">
+                    <span>Zip :</span>
+                    <input type="number" placeholder="123 456">
+                </div>
+            </div>
+            </div>
+            <div class="colomn">
+                <h3 class="title">Payment</h3>
+                <div class="input-box">
+                    <span>cards acceted: </span>
+                    <img src="https://www.watchstation.com/on/demandware.static/-/Library-Sites-WatchStationSharedLibrary/default/dwd759a869/customer_care/payment/Mobile_Card_View@2x.png" 
+                    width="400" height="150">
+                </div>
+                <div class="input-box"><span>Name on card :</span>
+                    <input type="text" placeholder="Mr/Mrs...">
+                </div>
+                <div class="input-box">
+                    <span>Credit card number :</span>
+                    <input type="number" placeholder="1111 2222 3333 4444">
+                </div>
+                <div class="input-box">
+                    <span>Ex.month  :</span>
+                    <input type="text" placeholder="march">
+                </div><div class="flex">
+                <div class="input-box">
+                    <span>Ex.year :</span>
+                    <input type="number" placeholder="2027">
+                </div>
+                <div class="input-box">
+                    <span>Cvv :</span>
+                    <input type="number" placeholder="123 ">
+                </div> 
+                </div>
+            </div></div>
+            <button type="submit" class="btn" onclick="return confirmPayment()">Submit</button>
+            <div class="home"><a href="/SwiftFit/index.html">Return Home</a></div>
+            
+    </form>
+</div>
+<script>
+function confirmPayment() {
+  return confirm("Are you sure you want to submit your payment information?");
+}
+
+</script>
+
+
+
+</body>
+</html>
