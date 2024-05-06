@@ -1,0 +1,281 @@
+body {
+    background-color: rgb(223, 208, 184);
+}
+*{
+    margin: 0%;
+    box-sizing: border-box;
+   
+}
+nav{
+    flex: 1;
+    text-align: center;
+}
+.navbar{
+    background-color: #3C5B6F;
+    align-items: center;
+    padding:10PX 30px;
+}
+nav ul {
+    display: inline-block;
+    color:rgb(148, 137, 121);
+    list-style: none;
+}
+nav ul li {
+    display: inline-flex;
+    margin-top: 20px;
+    padding: 20PX 80PX;
+    font-family:  sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.contanier .row .h2 {
+    margin-right: -10px ;
+
+}
+.contanier{
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #555555;
+}
+.row .ul .h2{
+    margin-left: -70px;
+    display: inline;
+}
+
+
+    
+a{
+    color:rgb(203, 185, 157);
+    text-decoration: none;
+
+}
+form {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+
+
+}
+
+input{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 42.4px;
+line-height: 30px;
+outline: 0;
+border: 0;
+display: none;
+font-size: 1em;
+border-radius: 20px;
+padding: 0 20px;
+
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: bisque;
+    text-align: center;
+    font-size: 1.2em;
+    transform: all 1s;
+
+}
+
+form:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+form:hover .fa{
+    background-color: #3C5B6F;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    font-family: cursive; 
+    color: #3C5B6F;
+    font-size: 30px;
+    padding: 30px;
+    margin-left: 60px;
+}
+
+.col-2{
+    flex-basis: 90%;
+    min-width: 100px;
+    padding-left: 20px ;
+    margin-left: 20px;
+}
+h6{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: -150px;
+    margin-top: 200PX;
+}
+ul{
+    margin-bottom: 20px;
+}
+footer ul li{
+   font-family:"outfit",sans-serif;
+   font-style: italic;
+   font-size: 20px;
+   list-style:none;
+   padding: 5px 6px;
+   margin: 0px;
+   margin-left: -100px;
+   display: flex;
+  
+}
+h2{
+    direction: ltr;
+    flex:5px;
+    margin-left: -5px;
+    text-align: left;
+    align-items: flex-start;
+}
+p{
+    font-size: 25px;
+}
+
+    
+.footer{
+    background-color:#3C5B6F;
+    margin-right: -30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 70px;
+    
+}
+
+h4{
+    color: rgb(188, 167, 134);
+    margin-right: -50px;
+    font-family:  sans-serif;
+    font-size: large;
+    padding: 25px;
+}
+.row .ul .h2{
+    margin: 70px;
+}
+
+ a{
+    font-family: sans-serif;
+    font-size: medium;
+}
+.social-links {
+    padding: 30px;
+}
+ .fa-search{
+    color: rgb(188, 167, 134);
+    size: 50;
+ }
+ .fa-solidfa-cart-shopping {
+    padding: 90px;
+    margin: 70px;
+    size-adjust: 70px;
+
+ }
+h1{
+    color: #3C5B6F;
+    font-family: cursive;
+    font-weight: bold;
+    padding-right: -20px;
+ }
+ .customerreviews{
+    padding: 40px 0;
+    background: black;
+    color: #3C5B6F;
+    text-align: center;
+
+ }
+ .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+ }
+ .border{
+    width: 160px;
+    height: 5px;
+    background-color:rgb(223, 208, 184);
+    margin: 26px;
+
+ }
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+
+.customerreviews{
+    background-color: rgb(223, 208, 184);
+    padding: 10px;
+    margin-right: 150px;
+    font-family: sans-serif;
+
+}
+.customerreviews img{
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+
+}
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+
+}
+@media screen and (max-width:600px){
+    .col{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+nav ul{
+    display: inline-flexbox;
+}
+
+
+h2{
+    color:#3C5B6F;
+    padding-right: 190px;
+    font-family: cursive;
+    margin-right: -20px;
+}
+
+ul li{
+    list-style: none;
+}
+    
+
+table{
+    display: flex;
+}
+td,tr{
+    border: 1px solid #3C5B6F;
+    text-align: left;
+    padding: 8px;
+    color: #3C5B6F;
+}

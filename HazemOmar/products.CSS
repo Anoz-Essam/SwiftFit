@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.Description{
+  display: block;
+  background-color: unset;
+}
+.Description li{
+  display: block;
+  list-style: circle;
+}
+.Description li a {
+  font-size: larger;
+}
+ul{
+  
+  margin: 0px;
+  list-style: none;
+  background-color: #3C5B6F;
+  padding:40px;
+  justify-content: center;
+  align-items: center;
+  
+}
+li{
+  display: inline;
+  padding-right: 5px;
+
+ 
+}
+li a{
+  text-decoration: none;
+  color: rgb(225, 231, 236);
+  padding:25px 25px;
+  margin-left: 25px;
+  text-transform: capitalize;
+  font-size: larger;
+  
+ 
+}
+li a:hover{
+  background-color:#153448 ;
+  color: white;
+  font-size: larger;
+  
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: #DFD0B8;
+}
+
+.navbar {
+  background-color: #3C5B6F;
+  padding: 20px 50px;
+}
+
+.logo-search-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  width: 100px;
+  height: 100px;
+}
+
+.navbar .searchbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #153448;
+}
+
+.navbar .searchbar input {
+  outline: none;
+  border: none;
+  background-color: #153448;
+}
+
+.navbar .searchbar input::placeholder {
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+
+.navbar ul .moon {
+  width: 32px;
+  height: 32px;
+}
+
+.navbar ul {
+  background-color: #3C5B6F;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #faf3e5;
+  text-decoration: none;
+  display: block;
+  padding: 14px 50px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #948979;
+
+}
+
+.navbar li {
+  float: left;
+}
+
+
+
+main .maintop {
+  display: flex;
+  margin-top: 80px;
+}
+
+main .maintop .col2 {
+  padding: 66px;
+    margin-top: -55px;
+}
+
+main .maintop .col2 img {
+  padding-bottom: 8px;
+  border-radius: 10px;
+  padding-top: -8px
+}
+
+main .maintop .col2 p {
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  font-size: large;
+}
+
+main .maintop .col2 h4 {
+  color: #38393a;
+  font-size: 44px;
+}
+
+main .maintop .col2 select {
+  display: flex;
+  justify-content: center;
+  padding: 10px 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  background-color: white;
+  border: solid;
+  border-color: #3C5B6F;
+}
+
+main .maintop .col2 option {
+  font-family: "Outfit", sans-serif;
+  font-size: larger;
+  font-weight: 100px;
+}
+
+main .maintop .col2 .quantity {
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+  width: 120px;
+  height: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  background-color: white;
+  border: solid;
+  border-color: #3C5B6F;
+}
+main .maintop.col2 ul li{
+  background-color: #153448;
+  color: #3C5B6F;
+}
+
+main .maintop .col2 button {
+  display: flex;
+  justify-content: center;
+  padding: 20px 100px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  background-color: #3C5B6F;
+}
+
+main .maintop .col2 button:hover {
+  background-color: #153448;
+  cursor: pointer;
+}
+
+main .maintop .col2 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+main .maintop hr {
+  color: gray;
+}
+
+main .maintop .col2 ul {
+  padding-left: 17px;
+  font-size: large;
+}
+
+main .maintop .col2 li {
+  padding-bottom: 15px;
+  ;
+}
+
+main .maintop .col2 .small-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .maintop .col2 .small-img-col {
+  flex-basis: 20%;
+  cursor: pointer;
+}
+main .smallmgIn {
+ width: 215px;
+    height: 170px
+}
+
+main .img-colors {
+  width: 90px;
+  cursor: pointer;
+}
+
+main .col2{
+  padding-left: 20px;
+}
+.font{
+  text-align: left;
+  padding-right: 10px;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  color: #38393a;
+}
+.select-size{
+  font-size: larger;
+  font-weight: 150px;
+
+}
+.fdd{
+  padding-top: 5px;
+ padding-right: 10px;
+  text-align: center;
+  
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  color: #38393a;
+}

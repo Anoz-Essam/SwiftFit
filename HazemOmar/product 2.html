@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="products.CSS">
+
+  <title>SwiftFit</title>
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo-search-cart">
+      <img src="logo.jpeg" alt="" class="logo">
+      <div class="searchbar">
+        <input type="text" placeholder="Search..">
+        <img src="search logo.png" width="20" height="20" alt="" class="searchIcon">
+      </div>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </div>
+    <ul>
+      <li><a href="/SwiftFit/index.html">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="/SwiftFit/HodaNasser/about.html">About</a></li>
+      <li><a href="/SwiftFit/RawanM/practical exam/practical.html">Login</a></li>
+      <li><a href="/SwiftFit/RawanE/contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+<main>
+    <div class="maintop">
+      <div class="col2">
+        <img src="shoes.jpg" alt="" id="bigimg">
+        <div class="small-img">
+          <div class="small-img-col">
+            <img src="shoes 2.jpg" class="smallmgIn">
+          </div>
+          <div class="small-img-col">
+            <img src="shoes 3.jpg" class="smallmgIn">
+          </div>
+          <div class="small-img-col">
+            <img src="shoes.jpg" class="smallmgIn">
+          </div>
+        </div>
+      </div>
+
+      <div class="col2">
+        <p>Home / Men / shoes</p>
+        <h1>Adidas Men's Swift Run</h1><br>
+
+        <h4>price:6000L.E</h4><br>
+        <span class="fdd">size</span>
+        <select>
+          
+            
+            <option>40</option>
+            <option>41</option>
+            <option>42</option>
+            <option>43</option>
+            <option>44</option>
+            <option>45</option>
+          </select>
+          <span class="font">Quantity</span>
+          <input type="number" value="1" class="quantity" placeholder="1" min="1" max="50" >
+          <button><a href="#cart">Add To Cart</a></button>
+          <hr>
+          <h4>About this item</h4>
+          <ul class="Description">
+            <li>1-Breathable mesh upper </li>
+            <li>2-Ultra-soft supportive insole</li>
+            <li>3-The special patch on the upper prevents the laces from tearing</li>
+            <li>4-Perfect for  workout, training and jogging</li>
+            <li>5-Level platform design features a lower heel-to-toe drop for a more natural running position</li>
+          </ul>
+          <hr>
+          
+    </div>
+    </div>
+    </div>
+</main>
+<script>
+  var bigimg = document.getElementById("bigimg");
+  var smallmgIn = document.getElementsByClassName("smallmgIn");
+  var imgcolors = document.getElementsByClassName("img-colors");
+  smallmgIn[0].onclick = function () {
+    bigimg.src = smallmgIn[0].src;
+  }
+  smallmgIn[1].onclick = function () {
+    bigimg.src = smallmgIn[1].src;
+  }
+  smallmgIn[2].onclick = function () {
+    bigimg.src = smallmgIn[2].src;
+  }
+</script>
+</body>
+</html>
