@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+  --primary-background:#DFD0B8;
+  --nav-color:#3C5B6F;
+  --search-color:#153448;
+  --dropdown-color:#153448;
+  --nav-text-color:#DFD0B8;
+  --nav-text-hover-color:#948979;
+  --head-img-txt-color:black;
+  --border-bord-color:#3C5B6F;;
+  --prod-bg-color:#cfbfa7;
+  --text-color:black;
+  --cart-bg-color:white;
+  --cart-hover-bg-color:lightgrey;
+  --features-txt-color:black;
+}
+.dark-mode{
+  --primary-background:#948979;
+  --nav-color:#153448;
+  --search-color:#3C5B6F;
+  --dropdown-color:#3C5B6F;
+  --nav-text-color:#948979;
+  --nav-text-hover-color:#DFD0B8;
+  --head-img-txt-color:lightgrey;
+  --border-bord-color:#153448;
+  --prod-bg-color:#a89c89;
+  --text-color:lightgrey;
+  --cart-bg-color:lightgrey;
+  --cart-hover-bg-color:white;
+  --features-txt-color:lightgrey;
+}
+
+/* HomePage */
+body{
+  background-color:var(--primary-background) ;
+  font-family: "Outfit", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+nav{
+  background-color:var(--nav-color);
+  color: white;
+  padding: 20px 50px;
+  z-index: 100000;
+}
+#mode-d{
+  display: block;
+}
+#mode-l{
+  display: none;
+}
+.Top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search{
+  background-color: var(--search-color);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+.searchIn{
+  width: 0px;
+  outline: none;
+  border: none;
+  transition: 0.6s;
+  background-color: transparent;
+  color: white;
+}
+.searchIn::placeholder{
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+#check:checked ~ .searchIn{
+  width: 300px;
+}
+
+.Bot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  }
+li {
+  float: left;
+}
+li a, .dropbtn {
+  font-size: large;
+  font-weight: bold;
+  display: inline-block;
+  color: var(--nav-text-color);
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  color: var(--nav-text-hover-color);
+  transform: translateY(-4px) ;
+  transition: all .3s;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  background-color:var(--dropdown-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: var(--nav-text-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {border-radius: 10px;}
+.dropdown:hover .dropdown-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-inline: auto;
+  gap:5px;
+}
+.home{
+  position: relative;
+  min-height: 700px;
+}
+.home-img{
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+}
+.home-img img {
+  max-width: 1100px;
+  width: 100%;
+}
+.home-img::before {
+  content: "Gear Up For Victory";
+  font-size: 7rem;
+  font-weight: 800;
+  position: absolute;
+  text-align: center;
+  top: -70px;
+  color: var(--head-img-txt-color);
+  z-index: -1;
+}
+
+#products{
+  text-align: center;
+  padding:10px 15px 10px 15px  ;
+}
+#products h1{
+  font-weight: bold;
+  font-size:80px ;
+  color: var(--text-color);
+}
+#products p{
+  font-size: 20px;
+  color: var(--text-color);
+}
+#products .prod{
+  position: relative;
+  padding: 10px 12px;
+  border: 1px solid var(--border-bord-color);
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 20px 20px 25px rgba(0,0,0,0.02);
+  transition: 0.2s ease;
+}
+
+#products .prod-container{
+  scale: 90%;
+  margin-inline: auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:25px;
+}
+#products .prod:hover{
+  box-shadow: 20px 20px 25px rgba(0,0,0,0.07);
+  background-color: var(--prod-bg-color);
+} 
+#products .prod img{
+  width: 100%;
+  border-radius: 15px;
+}
+#products .prod .desc{
+  text-align: start;
+  padding: 2px 0;
+}
+#products .prod .desc span{
+  font-size: 14px;
+  color: var(--text-color);
+}
+#products .prod .desc h5{
+  font-size: 16px;
+  padding-top: 4px;
+  color: var(--text-color);
+}
+#products .prod .desc i{
+  color: rgb(197, 148, 23);
+}
+#products .prod .desc h4{
+  padding-top: 4px;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--text-color);
+}
+#products .prod .cart{
+  width: 35px;
+  height: 35px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: var(--cart-bg-color) ;
+  font-weight: 500;
+  color: #888178;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+#products .prod .cart:hover{
+  background-color: var(--cart-hover-bg-color);
+  transition: 0.4s;
+}
+#features{
+  max-width: 1600px;
+  display: grid;
+  margin: 0 auto;
+  gap: 10px;
+}
+.features{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  color: var(--features-txt-color);
+}
+.feature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.featureIcon{
+  width: 50px;
+  height: 50px;
+}
+.featureTitle{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+footer {
+    display: flex;
+  }
+  
+  .footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .fMenuTitle {
+    font-size: 16px;
+    color: #153448;
+  }
+  
+  .fList {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .fListItem {
+    margin-bottom: 10px;
+    color: #3C5B6F;
+    cursor: pointer;
+  }
+  .fListItem:hover{
+     color: #2E8B57;
+     transition: all .4s;
+     transform: translateY(-3px) ;
+  }
+  
+  .footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .fInput {
+    padding: 5px;
+  }
+  
+  .fButton {
+    padding: 5px;
+    background-color: black;
+    color: white;
+  }
+  
+  .fIcons{
+    display: flex;
+  }
+  
+  .fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .copyright{
+    font-weight: 300;
+    font-size: 14px;
+  }
+/*Registration Page*/
+.body-2{
+  margin: 0;
+  padding: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #948979;
+}
+.container-reg{
+  max-width: 550px;
+  width: 100%;
+  background: #153448;
+  border-radius: 15px;
+  padding: 25px 30px;
+}
+.reg-title{
+  display: flex;
+  justify-content: center;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 30px;
+}
+.container-reg form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form .user-details.input-box{
+  margin-bottom: 15px; 
+  width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+  color: #DFD0B8;
+  font-weight: 400;
+  margin-bottom: 5px;
+  display: block;
+}
+.user-details .input-box input{
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  font-size: 15px;
+  border-bottom-width:5px ;
+  transition: all 0.25s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #2E8B57;
+}
+form .reg-button{
+  height: 40px;
+  margin: 25px 0;
+}
+form .reg-button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 550;
+  color: #153448;
+  background-color: #DFD0B8;
+}
+form .reg-button input:hover{
+  background-color: #d6bc93;
+}
+.container-reg .home-back{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #DFD0B8;
+}
+.container-reg .home-back:hover{
+  color: #d6bc93;
+}
+.container-reg .already-reg{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.container-reg .already-reg .log-in-txt{
+  color: lightgrey;
+}
+.container-reg .already-reg .log-in-reg{
+  color: #DFD0B8;
+}
+.container-reg .already-reg .log-in-reg:hover{
+  color: #d6bc93;
+}
